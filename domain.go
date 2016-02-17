@@ -4,3 +4,5 @@ type Domain struct {
 	Hash string `json:"hash"`
 	Name string `json:"name"`
 }
+
+type Domains []Domain
