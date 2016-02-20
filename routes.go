@@ -11,4 +11,23 @@ type Route struct {
 	Handler http.HandlerFunc
 }
 
-var routes = []Route{}
+var routes = []Route{
+	Route{
+		"GetDomainByHash",
+		"GET",
+		"/hash/{hash}",
+		GetDomainByHash,
+	},
+	Route{
+		"GetDomainByName",
+		"GET",
+		"/name/{name}",
+		GetDomainByName,
+	},
+	Route{
+		"CreateDomain",
+		"POST",
+		"/create",
+		GetDomainByName,
+	},
+}
