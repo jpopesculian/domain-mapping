@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/coreos/etcd/client"
 	"golang.org/x/net/context"
+	"strings"
 )
 
 func RepoGetDomainByHash(hash string) (Domain, error) {
@@ -46,9 +47,12 @@ func RepoGetDomainsByUserId(userId string) (Domains, error) {
 	}
 	nodes := meta.Node.Nodes
 	for _, node := range nodes {
+		nodePath := strings.Split(node.Key, "/")
+		hash := nodePath[len(nodePath)-1]
+		name := node.Value
 		domain := Domain{
-			node.Key,
-			node.Value,
+			hash,
+			name,
 		}
 		domains = append(domains, domain)
 	}

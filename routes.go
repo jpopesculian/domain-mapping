@@ -25,9 +25,15 @@ var routes = []Route{
 		GetDomainByName,
 	},
 	Route{
+		"ListDomainsByUserId",
+		"GET",
+		"/user/{user_id}",
+		GetDomainsByUserId,
+	},
+	Route{
 		"CreateDomain",
 		"POST",
 		"/create",
-		GetDomainByName,
+		CreateDomain,
 	},
 }
