@@ -1,0 +1,46 @@
+{
+	"ImportPath": "github.com/jpopesculian/domain-mapping",
+	"GoVersion": "go1.6",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/coreos/etcd/Godeps/_workspace/src/github.com/ugorji/go/codec",
+			"Comment": "v2.3.0-alpha.0-893-gc15b2a5",
+			"Rev": "c15b2a5077396c0f5aa0659d3cd0ed9f0f97cc1a"
+		},
+		{
+			"ImportPath": "github.com/coreos/etcd/Godeps/_workspace/src/golang.org/x/net/context",
+			"Comment": "v2.3.0-alpha.0-893-gc15b2a5",
+			"Rev": "c15b2a5077396c0f5aa0659d3cd0ed9f0f97cc1a"
+		},
+		{
+			"ImportPath": "github.com/coreos/etcd/client",
+			"Comment": "v2.3.0-alpha.0-893-gc15b2a5",
+			"Rev": "c15b2a5077396c0f5aa0659d3cd0ed9f0f97cc1a"
+		},
+		{
+			"ImportPath": "github.com/coreos/etcd/pkg/pathutil",
+			"Comment": "v2.3.0-alpha.0-893-gc15b2a5",
+			"Rev": "c15b2a5077396c0f5aa0659d3cd0ed9f0f97cc1a"
+		},
+		{
+			"ImportPath": "github.com/coreos/etcd/pkg/types",
+			"Comment": "v2.3.0-alpha.0-893-gc15b2a5",
+			"Rev": "c15b2a5077396c0f5aa0659d3cd0ed9f0f97cc1a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "1c83b3eabd45b6d76072b66b746c20815fb2872d"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "26a6070f849969ba72b72256e9f14cf519751690"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "8968c61983e8f51a91b8c0ef25bf739278c89634"
+		}
+	]
+}
