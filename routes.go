@@ -13,27 +13,33 @@ type Route struct {
 
 var routes = []Route{
 	Route{
-		"GetDomainByHash",
-		"GET",
-		"/hash/{hash}",
-		GetDomainByHash,
-	},
-	Route{
-		"GetDomainByName",
-		"GET",
-		"/name/{name}",
-		GetDomainByName,
-	},
-	Route{
 		"ListDomainsByUserId",
 		"GET",
 		"/user/{user_id}",
 		GetDomainsByUserId,
 	},
 	Route{
+		"GetUserIdByName",
+		"GET",
+		"/{name}/user",
+		GetUserIdByName,
+	},
+	Route{
+		"GetDomainByName",
+		"GET",
+		"/{name}",
+		GetDomainByName,
+	},
+	Route{
 		"CreateDomain",
 		"POST",
 		"/create",
 		CreateDomain,
+	},
+	Route{
+		"DeleteDomainByName",
+		"DELETE",
+		"/{name}",
+		DeleteDomainByName,
 	},
 }

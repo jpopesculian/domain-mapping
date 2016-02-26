@@ -11,6 +11,15 @@ type DomainCreateForm struct {
 }
 
 func ValidateDomainCreateForm(form DomainCreateForm) (bool, error) {
+	if len(form.Name) < 1 {
+		return false, nil
+	}
+	if len(form.Hash) < 1 {
+		return false, nil
+	}
+	if len(form.UserId) < 1 {
+		return false, nil
+	}
 	return true, nil
 }
 
